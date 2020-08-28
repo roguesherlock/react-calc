@@ -1,5 +1,3 @@
-I found myself doing this repeatedly so decided to create a base template which I can just mirror.
+# React Calc
 
-- React
-- Typescript
-- TailwindCSS
+Stupid simple Calculator on React/TypeScript/Tailwind Framework

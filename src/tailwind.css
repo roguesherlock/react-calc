@@ -1,3 +1,19 @@
 @tailwind base;
 @tailwind components;
+
+.btn {
+  @apply opacity-25 border border-solid border-gray-200 text-center text-white outline-none text-2xl rounded-full h-16 w-16 flex items-center justify-center;
+}
+.btn:hover {
+  @apply text-gray-500 cursor-pointer outline-none;
+}
+
+.btn:focus {
+  @apply border-2 border-solid border-red-500  outline-none;
+}
+
+.btn:active {
+  @apply border-2 border-solid border-yellow-500 opacity-75 text-white outline-none;
+}
+
 @tailwind utilities;

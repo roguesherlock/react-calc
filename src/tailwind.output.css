@@ -649,6 +649,57 @@ video {
   }
 }
 
+.btn {
+  opacity: 0.25;
+  border-width: 1px;
+  border-style: solid;
+  --border-opacity: 1;
+  border-color: #edf2f7;
+  border-color: rgba(237, 242, 247, var(--border-opacity));
+  text-align: center;
+  --text-opacity: 1;
+  color: #fff;
+  color: rgba(255, 255, 255, var(--text-opacity));
+  outline: 0;
+  font-size: 1.5rem;
+  border-radius: 9999px;
+  height: 4rem;
+  width: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn:hover {
+  --text-opacity: 1;
+  color: #a0aec0;
+  color: rgba(160, 174, 192, var(--text-opacity));
+  cursor: pointer;
+  outline: 0;
+}
+
+.btn:focus {
+  border-width: 2px;
+  border-style: solid;
+  --border-opacity: 1;
+  border-color: #f56565;
+  border-color: rgba(245, 101, 101, var(--border-opacity));
+  outline: 0;
+}
+
+.btn:active {
+  border-width: 2px;
+  border-style: solid;
+  --border-opacity: 1;
+  border-color: #ecc94b;
+  border-color: rgba(236, 201, 75, var(--border-opacity));
+  opacity: 0.75;
+  --text-opacity: 1;
+  color: #fff;
+  color: rgba(255, 255, 255, var(--text-opacity));
+  outline: 0;
+}
+
 .space-y-0 > :not(template) ~ :not(template) {
   --space-y-reverse: 0;
   margin-top: calc(0px * calc(1 - var(--space-y-reverse)));
